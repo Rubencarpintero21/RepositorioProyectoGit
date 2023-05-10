@@ -19,7 +19,7 @@
 }
 
 body {
-    background: #A5DAD2;
+    background: #a5dad2;
     font-family: Quicksand, san-serif;
 }
 
@@ -94,4 +94,51 @@ body {
 
 .scoreBoard span.active {
     border-bottom: 4px solid #F286A0;
+}
+
+.cont{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#usb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 75px;
+    background-color: #15181f;
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#usb:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+}
+
+.dark-theme{
+    background-color: #15181f;
+    color: #e5e5e5;
+}
+.dark-theme #usb{
+    background-color: #ffffff;
+}
+.dark-theme #usb:after{
+    background-color: transparent;
+    box-shadow: 10px 10px #15181f;
+    top: -4px;
+    left: 30px;
+}
+
+.instructions {
+    color: black;
 }
