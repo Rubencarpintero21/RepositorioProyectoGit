@@ -142,3 +142,15 @@ body {
 .instructions {
     color: black;
 }
+
+#restart {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #6640d8;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+  }

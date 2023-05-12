@@ -1,3 +1,8 @@
+let btnRef = document.querySelectorAll(".button-option");
+let restartBtn = document.getElementById("restart");
+let newgameBtn = document.getElementById("new-game");
+
+
 class Board {
 
     constructor(scoreBoard) {
@@ -190,3 +195,26 @@ class Board {
         }    	
     }
 }
+
+const disableButtons = () => {
+    btnRef.forEach((element) => (element.disabled = true));
+    //enable popup
+    popupRef.classList.remove("hide");
+  };
+
+const enableButtons = () => {
+    btnRef.forEach((element) => {
+      element.innerText = "";
+      element.disabled = false;
+    });
+  popupRef.classList.add("hide");
+};
+
+newgameBtn.addEventListener("click", () => {
+    count = 0;
+    enableButtons();
+  });
+  restartBtn.addEventListener("click", () => {
+    count = 0;
+    enableButtons();
+  });
